@@ -1,6 +1,6 @@
 body {
     box-sizing: border-box;
-    margin: 0;
+    margin-top: 25px;
 }
 
 #body {
@@ -8,6 +8,7 @@ body {
     justify-content: center;
     height: 90vh;
     width: 50vw;
+    margin: auto;
 }
 
 section {
