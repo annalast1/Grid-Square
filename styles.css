@@ -21,6 +21,6 @@ section {
 div {
     flex-grow: 1;
     width: 100%;
-    border: 2px solid red;
+    border: 1px solid black;
 }
 
