@@ -3,12 +3,19 @@ body {
     margin-top: 25px;
 }
 
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
 #body {
     display: flex;
     justify-content: center;
-    height: 90vh;
-    width: 50vw;
+    height: 70vh;
+    width: 35vw;
     margin: auto;
+    border: 15px solid black;
+    border-radius: 10px;
 }
 
 section {
@@ -22,5 +29,9 @@ div {
     flex-grow: 1;
     width: 100%;
     border: 1px solid black;
+}
+
+.clear {
+
 }
 
