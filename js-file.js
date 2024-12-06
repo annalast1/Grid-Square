@@ -47,8 +47,7 @@ clear.addEventListener("click", () => {
 
 resize.addEventListener("click", () => {
     size = prompt("Choose the size of grid (Max : 100)");
-    createCols();
-    createPixel();
+    
 })
 
 createPixel();
