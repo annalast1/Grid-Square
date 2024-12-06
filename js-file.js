@@ -21,11 +21,18 @@ function createPixel() {
             col.appendChild(pixel);
             pixel.setAttribute("class", "row" + x);
             pixel.addEventListener("mouseover", () => {
-                pixel.style.backgroundColor = 'black'
+                pixel.style.backgroundColor = randomColor();
             })
         }
         x++;
     }
 
 }
+
+function randomColor() {
+    let hex = Math.floor(Math.random() * 16777217).toString(16);
+    let hexCode = '#' + hex;
+    return hexCode
+}
+
 createPixel();
