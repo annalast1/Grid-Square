@@ -6,8 +6,12 @@ body {
 h1 {
     text-align: center;
     font-size: 50px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
-
+button {
+    display: inline;
+}
 #body {
     display: flex;
     justify-content: center;
@@ -15,7 +19,7 @@ h1 {
     width: 35vw;
     margin: auto;
     border: 15px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 section {

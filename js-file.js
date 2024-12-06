@@ -1,19 +1,16 @@
 let size = prompt("Choose the size of grid (Max : 100)")
 let body = document.getElementById("body");
-
 let clear = document.getElementById("clear");
+let resize = document.getElementById("resize");
 
 function createCols() {
 // Create  x divs and append to container div - making x cols
-    if (size === null) {
-        size = 16;
-    }
+    
     for (let cols = 0; cols < size; cols++) {
         let col = document.createElement("section");
         body.appendChild(col);
         col.setAttribute("id", "col" + cols);
-    }
-        
+    }        
 }
 createCols();
 
@@ -31,7 +28,6 @@ function createPixel() {
         }
         x++;
     }
-
 }
 
 function randomColor() {
@@ -48,5 +44,11 @@ clear.addEventListener("click", () => {
         item.style.backgroundColor = "white";
     })   
 });
+
+resize.addEventListener("click", () => {
+    size = prompt("Choose the size of grid (Max : 100)");
+    createCols();
+    createPixel();
+})
 
 createPixel();
