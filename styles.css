@@ -1,16 +1,30 @@
 body {
     box-sizing: border-box;
-    margin-top: 25px;
+    margin-top: 15px;
+    font-family: Tahoma;
+    height: 100vh;
+    background: linear-gradient(rgb(152, 251, 152), rgb(172, 219, 252));
 }
 
 h1 {
     text-align: center;
     font-size: 50px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-top: 10px;   
+    color: gray; 
 }
+
 button {
     display: inline;
+    color: white;
+    background-color: green;
+    margin: auto;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: -2px;
+    border-radius: 15px;
+    margin-left: 20px;
+
 }
 #body {
     display: flex;
@@ -18,7 +32,7 @@ button {
     height: 70vh;
     width: 35vw;
     margin: auto;
-    border: 15px solid black;
+    border: 25px solid green;
     border-radius: 15px;
 }
 
@@ -32,7 +46,7 @@ section {
 div {
     flex-grow: 1;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid gray;
 }
 
 

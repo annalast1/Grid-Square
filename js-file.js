@@ -1,18 +1,26 @@
-let size = prompt("Choose the size of grid (Max : 100)")
+let size = prompt("Choose the size of grid (Max : 100)");
 let body = document.getElementById("body");
 let clear = document.getElementById("clear");
 let resize = document.getElementById("resize");
 
+function createGrid() {
+    createCols();
+    createPixel();
+}
+
+createGrid();
+
 function createCols() {
 // Create  x divs and append to container div - making x cols
-    
+     
     for (let cols = 0; cols < size; cols++) {
         let col = document.createElement("section");
         body.appendChild(col);
         col.setAttribute("id", "col" + cols);
+        col.setAttribute("class", "column")
     }        
 }
-createCols();
+
 
 function createPixel() {
     let x = 0;
@@ -45,9 +53,20 @@ clear.addEventListener("click", () => {
     })   
 });
 
-resize.addEventListener("click", () => {
-    size = prompt("Choose the size of grid (Max : 100)");
-    
+resize.addEventListener("click", () =>  {
+    let col = document.querySelectorAll(".column");
+    let pixel = document.querySelectorAll(".row");
+    pixel.forEach(function(item) {
+        item.remove(pixel);
+    })
+    col.forEach(function(item) {
+        item.remove(col);
+    })
+        size = prompt("Choose the size of grid (Max : 100)");
+        createGrid(size);
+   
 })
 
-createPixel();
+
+
+
